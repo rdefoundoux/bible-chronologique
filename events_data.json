@@ -1,0 +1,116 @@
+[
+  {
+    "event": "La Création",
+    "year": "≈4000 av. J.-C.",
+    "description": "Dieu créa le monde en six jours",
+    "book": "Genèse 1-2"
+  },
+  {
+    "event": "La Chute",
+    "year": "≈4000 av. J.-C.",
+    "description": "Adam et Ève désobéissent à Dieu",
+    "book": "Genèse 3"
+  },
+  {
+    "event": "Le Déluge",
+    "year": "≈2500 av. J.-C.",
+    "description": "Dieu juge l'humanité par un déluge mondial",
+    "book": "Genèse 6-9"
+  },
+  {
+    "event": "La Tour de Babel",
+    "year": "≈2400 av. J.-C.",
+    "description": "Dieu brouille les langues de l'humanité",
+    "book": "Genèse 11"
+  },
+  {
+    "event": "L'Appel d'Abraham",
+    "year": "≈2000 av. J.-C.",
+    "description": "Dieu appelle Abraham et promet une grande nation",
+    "book": "Genèse 12"
+  },
+  {
+    "event": "L'Exode d'Égypte",
+    "year": "≈1445 av. J.-C.",
+    "description": "Moïse conduit Israël hors de l'esclavage",
+    "book": "Exode 12-15"
+  },
+  {
+    "event": "Les Dix Commandements",
+    "year": "≈1445 av. J.-C.",
+    "description": "Dieu donne la loi au Mont Sinaï",
+    "book": "Exode 19-20"
+  },
+  {
+    "event": "Entrée en Canaan",
+    "year": "≈1405 av. J.-C.",
+    "description": "Josué conduit Israël dans la Terre Promise",
+    "book": "Josué 1-5"
+  },
+  {
+    "event": "Règne de David",
+    "year": "1010-970 av. J.-C.",
+    "description": "David établit Jérusalem comme capitale",
+    "book": "2 Samuel"
+  },
+  {
+    "event": "Construction du Temple",
+    "year": "≈960 av. J.-C.",
+    "description": "Salomon construit le Temple de Jérusalem",
+    "book": "1 Rois 6"
+  },
+  {
+    "event": "Division du Royaume",
+    "year": "930 av. J.-C.",
+    "description": "Israël se divise en deux royaumes",
+    "book": "1 Rois 12"
+  },
+  {
+    "event": "Chute de Samarie",
+    "year": "722 av. J.-C.",
+    "description": "Le royaume du Nord tombe aux Assyriens",
+    "book": "2 Rois 17"
+  },
+  {
+    "event": "Chute de Jérusalem",
+    "year": "586 av. J.-C.",
+    "description": "Babylone détruit Jérusalem et le Temple",
+    "book": "2 Rois 25"
+  },
+  {
+    "event": "Retour d'Exil",
+    "year": "538 av. J.-C.",
+    "description": "Cyrus permet aux Juifs de retourner",
+    "book": "Esdras 1"
+  },
+  {
+    "event": "Naissance de Jésus",
+    "year": "≈6-4 av. J.-C.",
+    "description": "Le Messie naît à Bethléhem",
+    "book": "Matthieu 1-2, Luc 2"
+  },
+  {
+    "event": "Mort et Résurrection de Jésus",
+    "year": "30 apr. J.-C.",
+    "description": "Jésus meurt pour les péchés et ressuscite",
+    "book": "Matthieu 27-28"
+  },
+  {
+    "event": "Pentecôte",
+    "year": "30 apr. J.-C.",
+    "description": "Le Saint-Esprit descend sur les disciples",
+    "book": "Actes 2"
+  },
+  {
+    "event": "Conversion de Paul",
+    "year": "≈35 apr. J.-C.",
+    "description": "Saul devient Paul sur le chemin de Damas",
+    "book": "Actes 9"
+  },
+  {
+    "event": "Destruction du Temple",
+    "year": "70 apr. J.-C.",
+    "description": "Rome détruit le Second Temple",
+    "book": "Historique"
+  }
+]
