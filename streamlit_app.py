@@ -346,7 +346,7 @@ elif page == "⏳ Ligne de Temps":
 elif page == "📖 Événements Clés":
     st.markdown("### 📖 Événements Clés de la Bible")
 
-    for event in events_
+    for event in events_data:
         st.markdown(f"""
         <div class="event-card">
             <h3>🔥 {event["event"]}</h3>
@@ -355,6 +355,7 @@ elif page == "📖 Événements Clés":
             <p>{event["description"]}</p>
         </div>
         """, unsafe_allow_html=True)
+
 
 # PROGRESS PAGE
 elif page == "✅ Progression":
