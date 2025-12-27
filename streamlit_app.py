@@ -294,7 +294,7 @@ elif page == "📚 Livres Bibliques":
 
             col1, col2 = st.columns([1, 4])
             with col1:
-                book_id = f"{book[\'testament\']}-{book[\'book\']}"
+                book_id = f"{book['testament']}-{book['book']}"
                 if book_id in st.session_state.reading_progress:
                     if st.button("✅ Lu", key=f"read_{book_id}"):
                         st.session_state.reading_progress.remove(book_id)
