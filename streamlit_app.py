@@ -94,13 +94,13 @@ def load_data():
             {"book": "Abdias", "author": "Abdias", "events_period": "586-553 av. J.-C.", "writing_date": "585-550 av. J.-C.", "genre": "Prophétique", "era": "Royaumes Divisés", "page": 52},
             {"book": "Ézéchiel", "author": "Ézéchiel", "events_period": "593-571 av. J.-C.", "writing_date": "571-560 av. J.-C.", "genre": "Prophétique", "era": "Exil à Babylone", "page": 53},
             {"book": "Daniel", "author": "Daniel", "events_period": "605-536 av. J.-C.", "writing_date": "540-530 av. J.-C.", "genre": "Prophétique", "era": "Exil à Babylone", "page": 55},
-            {"book": "Esdras", "author": "Esdras", "events_period": "538-457 av. J.-C.", "writing_date": "450-400 av. J.-C.", "genre": "Historique", "era": "Retour d\'Exil", "page": 57},
-            {"book": "Néhémie", "author": "Néhémie", "events_period": "445-430 av. J.-C.", "writing_date": "430-400 av. J.-C.", "genre": "Historique", "era": "Retour d\'Exil", "page": 58},
-            {"book": "Esther", "author": "Inconnu", "events_period": "483-473 av. J.-C.", "writing_date": "460-430 av. J.-C.", "genre": "Historique", "era": "Retour d\'Exil", "page": 59},
-            {"book": "Aggée", "author": "Aggée", "events_period": "520 av. J.-C.", "writing_date": "520 av. J.-C.", "genre": "Prophétique", "era": "Retour d\'Exil", "page": 60},
-            {"book": "Zacharie", "author": "Zacharie", "events_period": "520-518 av. J.-C.", "writing_date": "518-480 av. J.-C.", "genre": "Prophétique", "era": "Retour d\'Exil", "page": 61},
-            {"book": "Joël", "author": "Joël", "events_period": "500-400 av. J.-C.", "writing_date": "500-400 av. J.-C.", "genre": "Prophétique", "era": "Retour d\'Exil", "page": 63},
-            {"book": "Malachie", "author": "Malachie", "events_period": "460-430 av. J.-C.", "writing_date": "460-430 av. J.-C.", "genre": "Prophétique", "era": "Retour d\'Exil", "page": 64},
+            {"book": "Esdras", "author": "Esdras", "events_period": "538-457 av. J.-C.", "writing_date": "450-400 av. J.-C.", "genre": "Historique", "era": "Retour d'Exil", "page": 57},
+            {"book": "Néhémie", "author": "Néhémie", "events_period": "445-430 av. J.-C.", "writing_date": "430-400 av. J.-C.", "genre": "Historique", "era": "Retour d'Exil", "page": 58},
+            {"book": "Esther", "author": "Inconnu", "events_period": "483-473 av. J.-C.", "writing_date": "460-430 av. J.-C.", "genre": "Historique", "era": "Retour d'Exil", "page": 59},
+            {"book": "Aggée", "author": "Aggée", "events_period": "520 av. J.-C.", "writing_date": "520 av. J.-C.", "genre": "Prophétique", "era": "Retour d'Exil", "page": 60},
+            {"book": "Zacharie", "author": "Zacharie", "events_period": "520-518 av. J.-C.", "writing_date": "518-480 av. J.-C.", "genre": "Prophétique", "era": "Retour d'Exil", "page": 61},
+            {"book": "Joël", "author": "Joël", "events_period": "500-400 av. J.-C.", "writing_date": "500-400 av. J.-C.", "genre": "Prophétique", "era": "Retour d'Exil", "page": 63},
+            {"book": "Malachie", "author": "Malachie", "events_period": "460-430 av. J.-C.", "writing_date": "460-430 av. J.-C.", "genre": "Prophétique", "era": "Retour d'Exil", "page": 64},
         ],
         "New Testament": [
             {"book": "Matthieu", "author": "Matthieu", "events_period": "6 av. J.-C.-30 apr. J.-C.", "writing_date": "50-70 apr. J.-C.", "genre": "Évangile", "era": "Vie de Jésus", "page": 65},
@@ -136,10 +136,10 @@ def load_data():
     events_data = [
         {"event": "La Création", "year": "≈4000 av. J.-C.", "description": "Dieu créa le monde en six jours", "book": "Genèse 1-2"},
         {"event": "La Chute", "year": "≈4000 av. J.-C.", "description": "Adam et Ève désobéissent à Dieu", "book": "Genèse 3"},
-        {"event": "Le Déluge", "year": "≈2500 av. J.-C.", "description": "Dieu juge l\'humanité par un déluge mondial", "book": "Genèse 6-9"},
-        {"event": "La Tour de Babel", "year": "≈2400 av. J.-C.", "description": "Dieu brouille les langues de l\'humanité", "book": "Genèse 11"},
-        {"event": "L\'Appel d\'Abraham", "year": "≈2000 av. J.-C.", "description": "Dieu appelle Abraham et promet une grande nation", "book": "Genèse 12"},
-        {"event": "L\'Exode d\'Égypte", "year": "≈1445 av. J.-C.", "description": "Moïse conduit Israël hors de l\'esclavage", "book": "Exode 12-15"},
+        {"event": "Le Déluge", "year": "≈2500 av. J.-C.", "description": "Dieu juge l'humanité par un déluge mondial", "book": "Genèse 6-9"},
+        {"event": "La Tour de Babel", "year": "≈2400 av. J.-C.", "description": "Dieu brouille les langues de l'humanité", "book": "Genèse 11"},
+        {"event": "L'Appel d'Abraham", "year": "≈2000 av. J.-C.", "description": "Dieu appelle Abraham et promet une grande nation", "book": "Genèse 12"},
+        {"event": "L'Exode d'Égypte", "year": "≈1445 av. J.-C.", "description": "Moïse conduit Israël hors de l'esclavage", "book": "Exode 12-15"},
         {"event": "Les Dix Commandements", "year": "≈1445 av. J.-C.", "description": "Dieu donne la loi au Mont Sinaï", "book": "Exode 19-20"},
         {"event": "Entrée en Canaan", "year": "≈1405 av. J.-C.", "description": "Josué conduit Israël dans la Terre Promise", "book": "Josué 1-5"},
         {"event": "Règne de David", "year": "1010-970 av. J.-C.", "description": "David établit Jérusalem comme capitale", "book": "2 Samuel"},
@@ -147,7 +147,7 @@ def load_data():
         {"event": "Division du Royaume", "year": "930 av. J.-C.", "description": "Israël se divise en deux royaumes", "book": "1 Rois 12"},
         {"event": "Chute de Samarie", "year": "722 av. J.-C.", "description": "Le royaume du Nord tombe aux Assyriens", "book": "2 Rois 17"},
         {"event": "Chute de Jérusalem", "year": "586 av. J.-C.", "description": "Babylone détruit Jérusalem et le Temple", "book": "2 Rois 25"},
-        {"event": "Retour d\'Exil", "year": "538 av. J.-C.", "description": "Cyrus permet aux Juifs de retourner", "book": "Esdras 1"},
+        {"event": "Retour d'Exil", "year": "538 av. J.-C.", "description": "Cyrus permet aux Juifs de retourner", "book": "Esdras 1"},
         {"event": "Naissance de Jésus", "year": "≈6-4 av. J.-C.", "description": "Le Messie naît à Bethléhem", "book": "Matthieu 1-2, Luc 2"},
         {"event": "Mort et Résurrection de Jésus", "year": "30 apr. J.-C.", "description": "Jésus meurt pour les péchés et ressuscite", "book": "Matthieu 27-28"},
         {"event": "Pentecôte", "year": "30 apr. J.-C.", "description": "Le Saint-Esprit descend sur les disciples", "book": "Actes 2"},
@@ -211,7 +211,7 @@ if page == "🏠 Accueil":
             "Monarchie Unie",
             "Royaumes Divisés",
             "Exil à Babylone",
-            "Retour d\'Exil"
+            "Retour d'Exil"
         ],
         "Nouveau Testament": [
             "Vie de Jésus",
@@ -286,7 +286,7 @@ elif page == "📚 Livres Bibliques":
                 <h3>📖 {book["book"]}</h3>
                 <p><strong>Auteur:</strong> {book["author"]} | <strong>Genre:</strong> {book["genre"]}</p>
                 <p><strong>Période des événements:</strong> {book["events_period"]}</p>
-                <p><strong>Date d\'écriture:</strong> {book["writing_date"]}</p>
+                <p><strong>Date d'écriture:</strong> {book["writing_date"]}</p>
                 <p><strong>Ère:</strong> {book["era"]} ({book["testament"]})</p>
                 <p><strong>Page du manuel:</strong> {book["page"]}</p>
             </div>
@@ -307,13 +307,13 @@ elif page == "📚 Livres Bibliques":
 # TIMELINE PAGE
 elif page == "⏳ Ligne de Temps":
     st.markdown("### ⏳ Ligne de Temps Biblique")
-    st.write("Explorez l\'histoire biblique de la Création à la période apostolique")
+    st.write("Explorez l'histoire biblique de la Création à la période apostolique")
 
     timeline_events = [
         {"year": -4000, "event": "La Création", "description": "Dieu créa le monde en six jours"},
-        {"year": -2500, "event": "Le Déluge", "description": "Noé et l\'arche"},
-        {"year": -2000, "event": "Abraham", "description": "L\'appel d\'Abraham"},
-        {"year": -1445, "event": "L\'Exode", "description": "Moïse libère Israël d\'Égypte"},
+        {"year": -2500, "event": "Le Déluge", "description": "Noé et l'arche"},
+        {"year": -2000, "event": "Abraham", "description": "L'appel d'Abraham"},
+        {"year": -1445, "event": "L'Exode", "description": "Moïse libère Israël d'Égypte"},
         {"year": -1405, "event": "Conquête de Canaan", "description": "Josué entre en Terre Promise"},
         {"year": -1050, "event": "Premier Roi", "description": "Saül devient roi"},
         {"year": -1010, "event": "Roi David", "description": "David règne sur Israël"},
@@ -321,10 +321,10 @@ elif page == "⏳ Ligne de Temps":
         {"year": -930, "event": "Royaume Divisé", "description": "Israël se divise en deux"},
         {"year": -722, "event": "Chute du Nord", "description": "Samarie tombe"},
         {"year": -586, "event": "Chute de Jérusalem", "description": "Exil à Babylone"},
-        {"year": -538, "event": "Retour d\'Exil", "description": "Cyrus libère les Juifs"},
+        {"year": -538, "event": "Retour d'Exil", "description": "Cyrus libère les Juifs"},
         {"year": -5, "event": "Naissance de Jésus", "description": "Le Messie naît"},
         {"year": 30, "event": "Crucifixion & Résurrection", "description": "Jésus meurt et ressuscite"},
-        {"year": 30, "event": "Pentecôte", "description": "Naissance de l\'Église"},
+        {"year": 30, "event": "Pentecôte", "description": "Naissance de l'Église"},
         {"year": 35, "event": "Paul", "description": "Conversion de Paul"},
         {"year": 70, "event": "Destruction du Temple", "description": "Rome détruit Jérusalem"},
     ]
@@ -334,7 +334,7 @@ elif page == "⏳ Ligne de Temps":
 
     st.markdown("---")
     for event in timeline_events:
-        year_display = f"{abs(event[\'year\'])} av. J.-C." if event["year"] < 0 else f"{event[\'year\']} apr. J.-C."
+        year_display = f"{abs(event['year'])} av. J.-C." if event["year"] < 0 else f"{event['year']} apr. J.-C."
         st.markdown(f"""
         <div class="event-card">
             <h4>📅 {year_display}: {event["event"]}</h4>
@@ -346,7 +346,7 @@ elif page == "⏳ Ligne de Temps":
 elif page == "📖 Événements Clés":
     st.markdown("### 📖 Événements Clés de la Bible")
 
-    for event in events_data:
+    for event in events_
         st.markdown(f"""
         <div class="event-card">
             <h3>🔥 {event["event"]}</h3>
@@ -375,7 +375,7 @@ elif page == "✅ Progression":
             testament, book_name = book_id.split("-", 1)
             st.markdown(f"✅ **{book_name}** ({testament})")
     else:
-        st.info("Vous n\'avez pas encore marqué de livres comme lus. Commencez votre parcours dans l\'onglet \'Livres Bibliques\'!")
+        st.info("Vous n'avez pas encore marqué de livres comme lus. Commencez votre parcours dans l'onglet 'Livres Bibliques'!")
 
     st.markdown("---")
 
