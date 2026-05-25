@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manuel Biblique Chronologique</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-icon">✦</div>
+        <div>
+          <h1 class="brand-title">Manuel Biblique</h1>
+          <p class="brand-subtitle">Chronologique</p>
+        </div>
+      </div>
+
+      <div class="header-tools">
+        <div class="search-box">
+          <span class="search-icon">⌕</span>
+          <input type="text" id="searchInput" placeholder="Rechercher un livre, période, événement..." />
+          <div id="searchResults" class="search-results hidden"></div>
+        </div>
+
+        <button id="themeToggle" class="icon-btn" title="Basculer le thème">
+          <span class="theme-icon-light">☀</span>
+          <span class="theme-icon-dark">☾</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <button class="nav-btn active" data-view="accueil">Accueil</button>
+      <button class="nav-btn" data-view="timeline">Chronologie</button>
+      <button class="nav-btn" data-view="periodes">Périodes</button>
+      <button class="nav-btn" data-view="livres">Livres</button>
+      <button class="nav-btn" data-view="pages">Manuel (pages)</button>
+      <button class="nav-btn" data-view="saviez">Le saviez-vous ?</button>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main id="mainContent">
+
+    <!-- ACCUEIL -->
+    <section id="view-accueil" class="view active">
+      <div class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">UNE GRANDE HISTOIRE</p>
+          <h2 class="hero-title">La Bible, racontée<br/>dans l'ordre des événements.</h2>
+          <p class="hero-desc">
+            Découvrez les Écritures comme une seule grande narration —
+            de la Création à l'Apocalypse, en passant par les patriarches,
+            les rois, les prophètes, le Christ et les apôtres.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-view="timeline">Explorer la chronologie</button>
+            <button class="btn btn-outline" data-view="livres">Parcourir les livres</button>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-num" id="statBooks">—</div>
+            <div class="stat-label">Livres</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" id="statPeriods">—</div>
+            <div class="stat-label">Périodes</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" id="statEvents">—</div>
+            <div class="stat-label">Événements</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">4000+</div>
+            <div class="stat-label">Années couvertes</div>
+          </div>
+        </div>
+      </div>
+
+      <section class="intro-card">
+        <h3>Comment l'utiliser ?</h3>
+        <p>
+          Votre Bible est organisée par <strong>genre littéraire</strong> — un peu comme une bibliothèque
+          qui range les livres par catégorie. Ce manuel, lui, vous présente la Bible
+          dans <strong>l'ordre chronologique des événements</strong> qu'elle raconte,
+          pour voir la grande narration de la bonne manière.
+        </p>
+        <p class="muted">
+          Lorsque le livre n'est pas un récit historique à proprement parler, il est signalé par
+          la mention « <em>non historique</em> » avec sa période d'arrière-plan.
+        </p>
+      </section>
+
+      <h3 class="section-title">Périodes principales</h3>
+      <div id="periodCards" class="period-cards"></div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="view-timeline" class="view">
+      <div class="view-header">
+        <h2>Chronologie biblique</h2>
+        <p>De la création (≈ 4000 av. J.-C.) à la fin du premier siècle (≈ 100 ap. J.-C.)</p>
+      </div>
+
+      <div class="timeline-filters">
+        <button class="chip active" data-filter="tous">Tout</button>
+        <button class="chip" data-filter="AT">Ancien Testament</button>
+        <button class="chip" data-filter="NT">Nouveau Testament</button>
+        <button class="chip" data-filter="evenement_majeur">Événements majeurs</button>
+        <button class="chip" data-filter="personnage">Personnages</button>
+      </div>
+
+      <div id="timeline" class="timeline"></div>
+    </section>
+
+    <!-- PERIODES -->
+    <section id="view-periodes" class="view">
+      <div class="view-header">
+        <h2>Périodes bibliques</h2>
+        <p>12 grandes périodes structurent la narration biblique</p>
+      </div>
+      <div id="periodList" class="period-list"></div>
+    </section>
+
+    <!-- LIVRES -->
+    <section id="view-livres" class="view">
+      <div class="view-header">
+        <h2>Les livres de la Bible</h2>
+        <p>66 livres organisés chronologiquement</p>
+      </div>
+
+      <div class="book-filters">
+        <button class="chip active" data-bookfilter="tous">Tous</button>
+        <button class="chip" data-bookfilter="AT">Ancien Testament</button>
+        <button class="chip" data-bookfilter="NT">Nouveau Testament</button>
+        <button class="chip" data-bookfilter="Pentateuque">Pentateuque</button>
+        <button class="chip" data-bookfilter="Évangile">Évangiles</button>
+        <button class="chip" data-bookfilter="Épîtres pauliniennes">Épîtres de Paul</button>
+        <button class="chip" data-bookfilter="Prophètes majeurs">Prophètes majeurs</button>
+        <button class="chip" data-bookfilter="Prophètes mineurs">Prophètes mineurs</button>
+      </div>
+
+      <div id="bookList" class="book-list"></div>
+    </section>
+
+    <!-- PAGES DU MANUEL -->
+    <section id="view-pages" class="view">
+      <div class="view-header">
+        <h2>Pages du manuel</h2>
+        <p>Parcourez les 106 pages originales du Manuel Biblique Chronologique</p>
+      </div>
+
+      <div class="pages-toolbar">
+        <input type="number" id="pageJump" min="1" max="106" placeholder="Aller à la page (1-106)" />
+        <button class="chip" id="pageJumpBtn">Aller</button>
+      </div>
+
+      <div id="pageGrid" class="page-grid"></div>
+    </section>
+
+    <!-- LE SAVIEZ-VOUS -->
+    <section id="view-saviez" class="view">
+      <div class="view-header">
+        <h2>Le saviez-vous ?</h2>
+        <p>Anecdotes et faits remarquables tirés du manuel</p>
+      </div>
+      <div id="saviezList" class="saviez-grid"></div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox pour les pages -->
+  <div id="pageLightbox" class="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev">‹</button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext">›</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" alt="" />
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Drawer (livre détaillé) -->
+  <aside id="bookDrawer" class="drawer">
+    <div class="drawer-content">
+      <button class="drawer-close" id="drawerClose">✕</button>
+      <div id="drawerBody"></div>
+    </div>
+  </aside>
+  <div id="drawerBackdrop" class="drawer-backdrop"></div>
+
+  <footer class="app-footer">
+    <p>Manuel Biblique Chronologique — Application interactive</p>
+    <p class="muted">Source : Manuel Biblique Chronologique (PDF) • Versets : Segond 21 (S21)</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
